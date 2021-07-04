@@ -1,8 +1,8 @@
 def solution(N):
     N2 = bin(N)[2:]
-    if ("10" not in N2) and ("01" not in N2):
-        return 0
-        
+    if len(N2) < 3: return 0
+    if ("10" not in N2) and ("01" not in N2): return 0
+
     i = 0
     j = 2
     max = 0
